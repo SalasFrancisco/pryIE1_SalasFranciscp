@@ -33,5 +33,11 @@ namespace pryIE1_SalasFranciscp
             frmCargaVentas f = new frmCargaVentas();
             f.ShowDialog();
         }
+
+        private void cmdListar_Click(object sender, EventArgs e)
+        {
+            frmListado f = new frmListado();
+            f.ShowDialog();
+        }
     }
 }

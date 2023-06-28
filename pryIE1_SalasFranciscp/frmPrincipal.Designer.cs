@@ -56,6 +56,7 @@
             this.cmdListar.TabIndex = 3;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
             // cmdCargarVenta
             // 

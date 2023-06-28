@@ -12,6 +12,8 @@ namespace pryIE1_SalasFranciscp
 {
     public partial class frmCargaProductos : Form
     {
+        string[,] matProductos = new string[5,3];
+
         public frmCargaProductos()
         {
             InitializeComponent();
@@ -20,6 +22,16 @@ namespace pryIE1_SalasFranciscp
         private void gbRegistros_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmCargaProductos_Load(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void cmdCargar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
