@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.gbOpciones = new System.Windows.Forms.GroupBox();
-            this.cmdCargarVenta = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
+            this.cmdCargarVenta = new System.Windows.Forms.Button();
             this.cdmCargarProducto = new System.Windows.Forms.Button();
             this.gbOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -47,16 +47,6 @@
             this.gbOpciones.TabStop = false;
             this.gbOpciones.Text = "Opciones";
             // 
-            // cmdCargarVenta
-            // 
-            this.cmdCargarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCargarVenta.Location = new System.Drawing.Point(59, 73);
-            this.cmdCargarVenta.Name = "cmdCargarVenta";
-            this.cmdCargarVenta.Size = new System.Drawing.Size(142, 43);
-            this.cmdCargarVenta.TabIndex = 2;
-            this.cmdCargarVenta.Text = "Cargar Venta";
-            this.cmdCargarVenta.UseVisualStyleBackColor = true;
-            // 
             // cmdListar
             // 
             this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -66,6 +56,17 @@
             this.cmdListar.TabIndex = 3;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
+            // 
+            // cmdCargarVenta
+            // 
+            this.cmdCargarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCargarVenta.Location = new System.Drawing.Point(59, 73);
+            this.cmdCargarVenta.Name = "cmdCargarVenta";
+            this.cmdCargarVenta.Size = new System.Drawing.Size(142, 43);
+            this.cmdCargarVenta.TabIndex = 2;
+            this.cmdCargarVenta.Text = "Cargar Venta";
+            this.cmdCargarVenta.UseVisualStyleBackColor = true;
+            this.cmdCargarVenta.Click += new System.EventHandler(this.cmdCargarVenta_Click);
             // 
             // cdmCargarProducto
             // 
@@ -90,6 +91,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.gbOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
