@@ -32,9 +32,11 @@ namespace pryIE1_SalasFranciscp
 
         private void cmdCargar_Click(object sender, EventArgs e)
         {
+            int f = 0;
+            int c = 0;
             
 
-            if (indiceFila > 4)
+            if (indiceFila >= 4)
             {
                 MessageBox.Show("No se pueden almacenar mas productos, Stock lleno", "Stock lleno!",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -43,15 +45,7 @@ namespace pryIE1_SalasFranciscp
             {
                 matProductos[indiceFila, 0] = txtID.Text;
                 matProductos[indiceFila, 1] = txtNombre.Text;
-                if (dtpRegistro.Value < DateTime.Today)
-                {
-                    MessageBox.Show("La fecha de registro debe ser una fecha actual", "Fecha Incorrecta!",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    matProductos[indiceFila, 2] = dtpRegistro.ToString();
-                }
+                matProductos[indiceFila, 2] = dtpRegistro.Value.ToString();
                 indiceFila++;
             }
 
@@ -60,6 +54,13 @@ namespace pryIE1_SalasFranciscp
             txtNombre.Text = "";
             dtpRegistro.Value = DateTime.Today;
 
+            if (f < matProductos.GetLength(0))
+            {
+
+                dgvProductos.Rows.Add(matProductos[f, 0],
+                 matProductos[f, 1], matProductos[f, 2]);
+                f++;
+            }
         }
 
         private void cmdLimpiar_Click(object sender, EventArgs e)
