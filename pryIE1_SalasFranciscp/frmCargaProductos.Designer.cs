@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gbRegistros = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegistro = new System.Windows.Forms.DateTimePicker();
             this.lblFechaRegistro = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             // 
             // gbRegistros
             // 
-            this.gbRegistros.Controls.Add(this.dateTimePicker1);
+            this.gbRegistros.Controls.Add(this.dtpRegistro);
             this.gbRegistros.Controls.Add(this.lblFechaRegistro);
             this.gbRegistros.Controls.Add(this.txtNombre);
             this.gbRegistros.Controls.Add(this.lblNombre);
@@ -63,13 +63,13 @@
             this.gbRegistros.Text = "Registro";
             this.gbRegistros.Enter += new System.EventHandler(this.gbRegistros_Enter);
             // 
-            // dateTimePicker1
+            // dtpRegistro
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 128);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(207, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpRegistro.Location = new System.Drawing.Point(9, 128);
+            this.dtpRegistro.Name = "dtpRegistro";
+            this.dtpRegistro.Size = new System.Drawing.Size(207, 20);
+            this.dtpRegistro.TabIndex = 6;
             // 
             // lblFechaRegistro
             // 
@@ -137,6 +137,7 @@
             this.cmdLimpiar.TabIndex = 0;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
+            this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
             // gbProductos
             // 
@@ -161,7 +162,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 244);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(703, 244);
             this.Controls.Add(this.gbProductos);
             this.Controls.Add(this.gbRegistros);
             this.MaximizeBox = false;
@@ -187,7 +189,7 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpRegistro;
         private System.Windows.Forms.Label lblFechaRegistro;
         private System.Windows.Forms.GroupBox gbProductos;
         private System.Windows.Forms.DataGridView dataGridView1;
