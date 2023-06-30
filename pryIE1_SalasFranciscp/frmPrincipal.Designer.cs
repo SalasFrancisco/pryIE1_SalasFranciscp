@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.gbOpciones = new System.Windows.Forms.GroupBox();
-            this.cmdListar = new System.Windows.Forms.Button();
             this.cmdCargarVenta = new System.Windows.Forms.Button();
             this.cdmCargarProducto = new System.Windows.Forms.Button();
             this.gbOpciones.SuspendLayout();
@@ -37,7 +36,6 @@
             // 
             // gbOpciones
             // 
-            this.gbOpciones.Controls.Add(this.cmdListar);
             this.gbOpciones.Controls.Add(this.cmdCargarVenta);
             this.gbOpciones.Controls.Add(this.cdmCargarProducto);
             this.gbOpciones.Location = new System.Drawing.Point(12, 12);
@@ -47,21 +45,10 @@
             this.gbOpciones.TabStop = false;
             this.gbOpciones.Text = "Opciones";
             // 
-            // cmdListar
-            // 
-            this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdListar.Location = new System.Drawing.Point(59, 127);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(142, 43);
-            this.cmdListar.TabIndex = 3;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = true;
-            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
-            // 
             // cmdCargarVenta
             // 
             this.cmdCargarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCargarVenta.Location = new System.Drawing.Point(59, 73);
+            this.cmdCargarVenta.Location = new System.Drawing.Point(59, 108);
             this.cmdCargarVenta.Name = "cmdCargarVenta";
             this.cmdCargarVenta.Size = new System.Drawing.Size(142, 43);
             this.cmdCargarVenta.TabIndex = 2;
@@ -72,7 +59,7 @@
             // cdmCargarProducto
             // 
             this.cdmCargarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cdmCargarProducto.Location = new System.Drawing.Point(59, 19);
+            this.cdmCargarProducto.Location = new System.Drawing.Point(59, 34);
             this.cdmCargarProducto.Name = "cdmCargarProducto";
             this.cdmCargarProducto.Size = new System.Drawing.Size(142, 43);
             this.cdmCargarProducto.TabIndex = 1;
@@ -101,7 +88,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbOpciones;
-        private System.Windows.Forms.Button cmdListar;
         private System.Windows.Forms.Button cmdCargarVenta;
         private System.Windows.Forms.Button cdmCargarProducto;
     }

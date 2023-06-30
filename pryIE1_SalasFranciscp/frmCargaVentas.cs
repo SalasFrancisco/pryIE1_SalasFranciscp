@@ -118,12 +118,18 @@ namespace pryIE1_SalasFranciscp
                     else
                     {
                         MessageBox.Show("No se encontro Venta!", "ERROR",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 c++;
             }
             txtConsultaNombre.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmListado f = new frmListado("Ventas", matVentas);
+            f.ShowDialog();
         }
     }   
 

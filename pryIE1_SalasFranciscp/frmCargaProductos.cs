@@ -12,7 +12,7 @@ namespace pryIE1_SalasFranciscp
 {
     public partial class frmCargaProductos : Form
     {
-        string[,] matProductos = new string[5,3];
+        public string[,] matProductos = new string[5,3];
         int indiceFila = 0;
         int f = 0;
 
@@ -66,6 +66,12 @@ namespace pryIE1_SalasFranciscp
             txtID.Text = "";
             txtNombre.Text = "";
             dtpRegistro.Value = DateTime.Today;
+        }
+
+        private void cmdListar_Click(object sender, EventArgs e)
+        {
+            frmListado f = new frmListado("Productos", matProductos);
+            f.ShowDialog();
         }
     }
 }

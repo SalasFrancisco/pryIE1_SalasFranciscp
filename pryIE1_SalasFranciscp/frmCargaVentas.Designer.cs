@@ -51,6 +51,7 @@
             this.txtConsultaNombre = new System.Windows.Forms.TextBox();
             this.txtConsultaCantidad = new System.Windows.Forms.TextBox();
             this.cmdLimpiar = new System.Windows.Forms.Button();
+            this.cmdlistado = new System.Windows.Forms.Button();
             this.gbVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultas)).BeginInit();
             this.SuspendLayout();
@@ -193,7 +194,7 @@
             // 
             this.lblConsultaNombre.AutoSize = true;
             this.lblConsultaNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConsultaNombre.Location = new System.Drawing.Point(241, 114);
+            this.lblConsultaNombre.Location = new System.Drawing.Point(241, 104);
             this.lblConsultaNombre.Name = "lblConsultaNombre";
             this.lblConsultaNombre.Size = new System.Drawing.Size(144, 17);
             this.lblConsultaNombre.TabIndex = 14;
@@ -201,7 +202,7 @@
             // 
             // cmdConsulta1
             // 
-            this.cmdConsulta1.Location = new System.Drawing.Point(238, 160);
+            this.cmdConsulta1.Location = new System.Drawing.Point(238, 150);
             this.cmdConsulta1.Name = "cmdConsulta1";
             this.cmdConsulta1.Size = new System.Drawing.Size(142, 23);
             this.cmdConsulta1.TabIndex = 15;
@@ -249,7 +250,7 @@
             // 
             // txtConsultaNombre
             // 
-            this.txtConsultaNombre.Location = new System.Drawing.Point(238, 134);
+            this.txtConsultaNombre.Location = new System.Drawing.Point(238, 124);
             this.txtConsultaNombre.Name = "txtConsultaNombre";
             this.txtConsultaNombre.Size = new System.Drawing.Size(142, 20);
             this.txtConsultaNombre.TabIndex = 17;
@@ -272,12 +273,23 @@
             this.cmdLimpiar.UseVisualStyleBackColor = true;
             this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
+            // cmdlistado
+            // 
+            this.cmdlistado.Location = new System.Drawing.Point(238, 192);
+            this.cmdlistado.Name = "cmdlistado";
+            this.cmdlistado.Size = new System.Drawing.Size(142, 23);
+            this.cmdlistado.TabIndex = 20;
+            this.cmdlistado.Text = "Listado";
+            this.cmdlistado.UseVisualStyleBackColor = true;
+            this.cmdlistado.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmCargaVentas
             // 
             this.AcceptButton = this.cmdCargar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 248);
+            this.Controls.Add(this.cmdlistado);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.txtConsultaCantidad);
             this.Controls.Add(this.txtConsultaNombre);
@@ -325,5 +337,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.Button cmdLimpiar;
+        private System.Windows.Forms.Button cmdlistado;
     }
 }

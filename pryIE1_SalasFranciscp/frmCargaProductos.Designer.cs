@@ -42,6 +42,7 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmdListar = new System.Windows.Forms.Button();
             this.gbRegistros.SuspendLayout();
             this.gbProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -49,6 +50,7 @@
             // 
             // gbRegistros
             // 
+            this.gbRegistros.Controls.Add(this.cmdListar);
             this.gbRegistros.Controls.Add(this.dtpRegistro);
             this.gbRegistros.Controls.Add(this.lblFechaRegistro);
             this.gbRegistros.Controls.Add(this.txtNombre);
@@ -188,6 +190,17 @@
             this.Fecha.Name = "Fecha";
             this.Fecha.ReadOnly = true;
             // 
+            // cmdListar
+            // 
+            this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdListar.Location = new System.Drawing.Point(139, 168);
+            this.cmdListar.Name = "cmdListar";
+            this.cmdListar.Size = new System.Drawing.Size(83, 23);
+            this.cmdListar.TabIndex = 7;
+            this.cmdListar.Text = "Listar";
+            this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
+            // 
             // frmCargaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,5 +239,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.Button cmdListar;
     }
 }

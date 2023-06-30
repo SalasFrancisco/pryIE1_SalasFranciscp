@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lstDatos = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // lstDatos
+            // 
+            this.lstDatos.FormattingEnabled = true;
+            this.lstDatos.Location = new System.Drawing.Point(12, 12);
+            this.lstDatos.Name = "lstDatos";
+            this.lstDatos.Size = new System.Drawing.Size(776, 329);
+            this.lstDatos.TabIndex = 0;
+            // 
+            // frmListado
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 348);
+            this.Controls.Add(this.lstDatos);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmListado";
             this.Text = "frmListado";
+            this.Load += new System.EventHandler(this.frmListado_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lstDatos;
     }
 }

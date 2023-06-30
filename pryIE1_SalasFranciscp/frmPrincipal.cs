@@ -36,8 +36,7 @@ namespace pryIE1_SalasFranciscp
 
         private void cmdListar_Click(object sender, EventArgs e)
         {
-            frmListado f = new frmListado();
-            f.ShowDialog();
+
         }
     }
 }
