@@ -14,6 +14,7 @@ namespace pryIE1_SalasFranciscp
     {
         string[,] matProductos = new string[5,3];
         int indiceFila = 0;
+        int f = 0;
 
         public frmCargaProductos()
         {
@@ -32,11 +33,8 @@ namespace pryIE1_SalasFranciscp
 
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-            int f = 0;
-            int c = 0;
             
-
-            if (indiceFila >= 4)
+            if (indiceFila > 4)
             {
                 MessageBox.Show("No se pueden almacenar mas productos, Stock lleno", "Stock lleno!",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
